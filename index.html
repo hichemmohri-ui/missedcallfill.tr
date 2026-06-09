@@ -1,3 +1,97 @@
+
+Claude finished the response
+
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>MissedCallFill — You missed the call. Don’t miss the booking.</title> <!-- ============================================================ MISSEDCALLF
+
+pasted
+
+i wanrt you to change the code to turkish clients, (but remoiv the last card about me founder)
+
+7:12 PM
+
+Translated landing page to Turkish and excised founder section
+Translated landing page to Turkish and excised founder section
+I'll translate the landing page into Turkish and remove the founder section. Let me build the file.
+
+
+Created a file, read a file
+Created a file, read a file
+Done. The page is now fully in Turkish and the founder card (the headshot + your quote at the bottom) has been removed.
+
+A couple of things I left as-is that you may want to decide on:
+
+Pricing stays in dollars ($25/ay, $39/ay). For a Turkish audience this would normally be in ₺ (TL). I didn't convert it since the right number depends on your actual pricing strategy, not a raw exchange rate. Tell me the TL figures you want and I'll swap them.
+Formspree endpoints and the brand name "MissedCallFill" are untouched, so the forms still post to the same place.
+Want me to localize the currency or rename the product for the Turkish market?
+
+
+Missedcallfill tr
+Code · HTML 
+I want you to remove everything that related to studio owner
+
+7:23 PM
+
+Thought for 1s
+Thought for 1s
+Claude's response was interrupted.
+I want you to remove everything that related to studio owner
+make it 600 Turkish lira
+
+7:23 PM
+
+Identified studio-specific references and recalibrated pricing structure
+Identified studio-specific references and recalibrated pricing structure
+Done. Changes made:
+
+Removed the studio/massage framing. The hero subtitle now reads "yoğun hizmet işletmeleri için" (for busy service businesses) instead of targeting massage therapists, and the demo conversation no longer mentions a 60-minute massage — it's now a generic "Yarın için bir randevu almak istiyorum." (The founder card was already gone from the last version.)
+Price set to ₺600/ay, with the after-launch price as ₺900/ay.
+If you'd rather have a different after-launch ("was") price than ₺900, just give me the number and I'll swap it.
+
+
+Missedcallfill tr
+Code · HTML 
+ok, let
+
+remvoe this entreprises
+🎁 Appel manqué Remplissez d'abordvotre rendez-vousLibre jusqu'à ce qu'il soit secouru
+
+replace this Pour les massothérapeutes indépendants et dévoués, with for solo businessowners
+
+for the phone animation, replace massage with a medical appointment,
+
+8:16 PM
+
+Detected language mismatch between French quotes and Turkish file
+Detected language mismatch between French quotes and Turkish file
+Quick heads-up before I make the changes: the text you pasted ("Appel manqué… votre rendez-vous", "Pour les massothérapeutes indépendants et dévoués") is French, but the file we've been building is the Turkish version. So you may be looking at a different (French) copy of the page than the one I have.
+
+I'll apply your three edits to our Turkish file now, and at the end I'll flag the language question so we can sort out which version you actually want.
+
+
+Edited 2 files, read a file
+Edited 2 files, read a file
+Done. On the Turkish file:
+
+Removed the gift banner ("🎁 …ilk randevunuzu kurtarana kadar ücretsiz") from the top of the hero.
+Replaced the targeting line with "bağımsız işletme sahipleri için" (the Turkish for "for solo business owners").
+Phone animation now shows a medical appointment: "Yarın için bir doktor randevusu almak istiyorum."
+Two things to sort out:
+
+Language mismatch. You pasted French strings, but this file is Turkish. Are you actually working on a French version of this page that you want me to edit instead? If so, share that file (or tell me to translate this one into French) and I'll apply the same three changes there.
+One leftover "free until" line. There's still a similar message on the price card — the rotated callout reading "MissedCallFill ilk randevunuzu kurtarana kadar ücret yok 💵." You only asked to remove the top banner, so I left it. Want that one gone too?
+
+Missedcallfill tr
+Code · HTML 
+
+
+
+
+
+Claude is AI and can make mistakes. Please double-check responses.
+
+
+raw
+Missedcallfill tr · HTML
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -68,7 +162,7 @@
     font-weight:700;
     margin-bottom:10px;
   }
-
+ 
   header{padding:20px 0 4px;position:relative;z-index:2}
   .bar{display:flex;align-items:center;justify-content:space-between}
   .logo{font-family:'Fraunces',serif;font-weight:600;font-size:25px;letter-spacing:-.02em}
@@ -78,13 +172,13 @@
     background:var(--bone-deep);border:1px solid var(--line);color:var(--ink-soft);
     padding:7px 13px;border-radius:999px;white-space:nowrap;
   }
-
+ 
   .hero{padding:46px 0 34px;display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
   .hero-offer-wrap{grid-column:1 / -1;display:flex;justify-content:center;margin-top:22px}
   .hero-offer{width:min(100%,560px)}
   .hero-copy{max-width:560px}
   .hero h1{font-size:clamp(38px,6.4vw,62px);margin:16px 0 0}
-
+ 
   .mini-banner{
     display:inline-flex;
     align-items:center;
@@ -114,7 +208,7 @@
   .btn-ghost:hover{border-color:var(--ink-soft)}
   .micro{margin-top:16px;font-size:13.5px;color:var(--ink-soft);display:flex;align-items:center;gap:7px}
   .micro .dot{width:6px;height:6px;border-radius:50%;background:var(--sage)}
-
+ 
   .demo{display:flex;justify-content:center}
   .demo-flow{
     display:flex;
@@ -123,7 +217,7 @@
   }
   .flow-arrow{display:none}
   @keyframes arrowIn{to{opacity:1;transform:translateX(0)}}
-
+ 
   .phone{
     width:320px;background:#0F172A;border-radius:42px;padding:13px;
     margin-top:18px;
@@ -144,7 +238,7 @@
   .booked{align-self:center;max-width:92%;background:var(--sage);color:#fff;text-align:center;font-weight:700;border-radius:13px}
   .m1{animation-delay:1.0s}.m2{animation-delay:2.0s}.m3{animation-delay:3.5s}.m4{animation-delay:5.1s}.m5{animation-delay:6.3s}
   @keyframes pop{to{opacity:1;transform:translateY(0) scale(1)}}
-
+ 
   section{padding:64px 0;position:relative}
   .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
   .reveal.in{opacity:1;transform:none}
@@ -154,7 +248,7 @@
   .section-head h2{font-size:clamp(18px,2.8vw,28px);line-height:1.15;color:var(--ink)}
   h2{font-size:clamp(24px,4.2vw,36px);margin:0}
   .lead{color:var(--ink-soft);font-size:18px;margin-top:14px}
-
+ 
   .band{background:linear-gradient(135deg,#0F172A 0%, #1E3A8A 100%);color:var(--bone);border-radius:26px;padding:48px 34px;text-align:center}
   .band .big{font-family:'Fraunces',serif;font-size:clamp(40px,8vw,68px);color:#fff;line-height:1}
   .band .big .serif-em{color:#93C5FD}
@@ -165,7 +259,7 @@
     border:none !important;
     box-shadow:none !important;
   }
-
+ 
   .steps-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;align-items:start;margin-top:44px;position:relative}
   .step-flow{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:22px 22px 28px;box-shadow:var(--shadow);min-height:430px;position:relative;text-align:center}
   .step-chip{display:inline-flex;align-items:center;justify-content:center;background:var(--sage);color:#f3efe6;border-radius:999px;padding:6px 12px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
@@ -176,13 +270,13 @@
   .step-flow ul{margin:10px auto 0;max-width:220px;text-align:left;padding-left:18px}
   .step-arrow{position:absolute;top:50%;right:-20px;transform:translateY(-50%);font-size:44px;color:var(--sage);font-weight:700;line-height:1}
   .step-flow:last-child .step-arrow{display:none}
-
+ 
   .trust-block{background:var(--card);border:1px solid var(--line);border-radius:26px;padding:34px;box-shadow:var(--shadow);max-width:980px;margin:0 auto}
   .trust-block h2{text-align:center;font-size:clamp(28px,4vw,38px)}
   .trust-bullets{list-style:none;margin:24px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:14px 18px}
   .trust-bullets li{position:relative;padding-left:28px;font-size:17px;color:var(--ink-soft);font-weight:600}
   .trust-bullets li::before{content:"✓";position:absolute;left:0;top:0;color:var(--sage);font-weight:800}
-
+ 
   .offer{background:var(--ink);color:var(--bone);border-radius:26px;padding:84px 34px 48px;text-align:center;max-width:560px;margin:0 auto;position:relative;overflow:visible}
   .offer .price{font-family:'Fraunces',serif;font-size:64px;color:#fff;line-height:1}
   .offer .price small{font-size:18px;color:#cdbfae;font-weight:400}
@@ -197,7 +291,7 @@
   .hero-offer .btn-ghost{background:var(--sage);color:#fff;border:none;box-shadow:0 8px 22px -8px rgba(110,124,95,.7)}
   .hero-offer .btn-ghost:hover{transform:translateY(-2px);box-shadow:0 14px 30px -10px rgba(110,124,95,.8)}
   .callout-cash{color:#BFDBFE;text-shadow:0 1px 0 rgba(0,0,0,.18)}
-
+ 
   .notify{margin-top:18px}
   .notify-sep{display:flex;align-items:center;gap:12px;color:#7B8CA3;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin:6px 0 14px}
   .notify-sep::before,.notify-sep::after{content:"";height:1px;flex:1;background:rgba(231,220,203,.18)}
@@ -223,7 +317,7 @@
     .notify-form{flex-direction:column}
     .notify-btn{width:100%}
   }
-
+ 
   .faq-head{max-width:980px;margin:0 auto 18px;text-align:center;background:none;border:none;box-shadow:none;padding:0 18px}
   .faq-head .eyebrow{display:inline-block;margin-bottom:0;font-size:clamp(22px,2.4vw,32px);letter-spacing:.16em;text-transform:uppercase;color:var(--clay);font-weight:700}
   .faq-head h2{display:none}
@@ -237,13 +331,13 @@
   summary::after{content:none}
   details[open] summary::before{transform:rotate(45deg);background:var(--bone-deep)}
   details p{color:var(--ink-soft);margin:0;font-size:20px;line-height:1.72;padding:0 28px 28px 88px;max-width:54rem}
-
+ 
   footer{padding:40px 0 130px;text-align:center;color:var(--ink-soft);font-size:14px}
   footer .logo{font-size:18px;margin-bottom:8px}
-
+ 
   .sticky{position:fixed;bottom:0;left:0;right:0;z-index:50;display:none;background:rgba(244,247,251,.92);backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:12px 16px calc(12px + env(safe-area-inset-bottom))}
   .sticky .btn-primary{width:100%;justify-content:center}
-
+ 
   @media(max-width:860px){
     .faq-head{padding:0 14px;margin-bottom:18px}
     .faq{padding:0 14px}
@@ -276,16 +370,15 @@
 </style>
 </head>
 <body>
-
+ 
 <header><div class="wrap bar">
   <div class="logo">MissedCall<b>Fill</b></div>
   <div class="pill">★ Kuruluş teklifi · ilk 20 işletme</div>
 </div></header>
-
+ 
 <div class="wrap hero">
   <div class="hero-copy">
-    <div class="mini-banner">🎁 MissedCallFill ilk <strong>randevunuzu</strong> kurtarana kadar ücretsiz</div>
-    <span class="eyebrow hero-topline">yoğun hizmet işletmeleri için</span>
+    <span class="eyebrow hero-topline">bağımsız işletme sahipleri için</span>
     <h1>Çağrılarınızı anında <span class="serif-em">randevuya</span> dönüştürün.</h1>
     <ul class="hero-bullets">
       <li>Bir çağrıyı kaçırdığınız anda, arayan kişiye otomatik olarak mesaj atar</li>
@@ -293,7 +386,7 @@
       <li>Seans ortasında duramayan yoğun hizmet işletmeleri için tasarlandı</li>
     </ul>
   </div>
-
+ 
   <div class="demo">
     <div class="demo-flow">
       <div class="phone"><div class="screen">
@@ -304,23 +397,23 @@
         <div class="thread">
           <div class="msg alert m1">⚠️ Alex'ten kaçan çağrı</div>
           <div class="msg out m2"><span class="lbl">Anında mesaj gönderildi</span>Merhaba, çağrınızı kaçırdığım için üzgünüm. Randevu almak, ertelemek, iptal etmek veya kısa bir soru sormak ister misiniz?</div>
-          <div class="msg in m3">Yarın için bir randevu almak istiyorum.</div>
+          <div class="msg in m3">Yarın için bir doktor randevusu almak istiyorum.</div>
           <div class="msg booked m4">Yarın iki müsait saatimiz var: 11.30 ve 14.30. Hangisini istersiniz?</div>
           <div class="msg in m5">11.30'u istiyorum.</div>
         </div>
       </div></div>
     </div>
   </div>
-
+ 
 </div>
-
+ 
 <section class="plain-band-section"><div class="wrap reveal">
   <div class="band">
     <div class="big">Kaçan çağrıların çoğu kaybedilen gelire dönüşür</div>
     <p>Seanstaysanız, bir müşteriyle birlikteyseniz ya da sadece telefondan uzaktaysanız, arayanlar uzun süre beklemez. Siz geri aradığınızda, çoktan başka bir yere gitmiş olabilirler.</p>
   </div>
 </div></section>
-
+ 
 <section class="plain-trust-section"><div class="wrap reveal">
   <div class="trust-block">
     <h2>Bir sohbet botu değil. Kontrollü bir SMS resepsiyonisti.</h2>
@@ -334,7 +427,7 @@
     </ul>
   </div>
 </div></section>
-
+ 
 <section><div class="wrap">
   <div class="section-head reveal"><span class="eyebrow">Nasıl çalışır</span><h2>Bir kez ayarlayın. Kaçan çağrılara kendi başına yanıt verir.</h2></div>
   <div class="steps-flow reveal">
@@ -375,8 +468,8 @@
     </div>
   </div>
 </div></section>
-
-
+ 
+ 
 <section><div class="wrap reveal">
   <div class="offer hero-offer" style="margin-left:auto;margin-right:auto;margin-top:30px">
     <div class="offer-callout">MissedCallFill ilk <span class="callout-cash">randevunuzu</span> kurtarana kadar ücret yok 💵</div>
@@ -389,7 +482,7 @@
       <li>İstediğiniz zaman iptal edin</li>
     </ul>
     <button class="btn btn-ghost" id="openReserve">Kuruluş Fiyatını Ayırtın →</button>
-
+ 
     <div id="reserveBox" style="display:none;margin-top:18px;background:#F8FBFF;padding:18px;border-radius:14px;color:#221C16">
       <form id="reserveForm">
         <input type="text" name="name" placeholder="Ad" required style="width:100%;margin-bottom:10px;padding:10px;border-radius:8px;border:1px solid #ccc">
@@ -402,7 +495,7 @@
       </form>
       <p id="reserveDone" style="display:none;margin-top:10px;font-weight:600">✓ Talep gönderildi</p>
     </div>
-
+ 
     <div class="notify">
       <div class="notify-sep">veya</div>
       <p class="notify-label">Henüz hazır değil misiniz? E-postanızı bırakın, erken erişim açıldığında sizi bilgilendireyim.</p>
@@ -415,7 +508,7 @@
     </div>
   </div>
 </div></section>
-
+ 
 <section><div class="wrap">
   <div class="faq-head reveal">
     <span class="eyebrow">SSS</span>
@@ -439,12 +532,12 @@
     </details>
   </div>
 </div></section>
-
+ 
 <footer><div class="wrap">
   <div class="logo">MissedCall<b>Fill</b></div>
   <div>Çağrıyı kaçırdınız. Randevuyu kaçırmayın. · © 2026</div>
 </div></footer>
-
+ 
 <script>
   const revealElements = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries) => {
@@ -456,7 +549,7 @@
     });
   }, { threshold: .15 });
   revealElements.forEach((el) => io.observe(el));
-
+ 
   const demo = document.querySelector('.demo');
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (demo && !prefersReducedMotion) {
@@ -467,7 +560,7 @@
       demo.innerHTML = c;
     }, 7000);
   }
-
+ 
   const openBtn = document.getElementById('openReserve');
   const box = document.getElementById('reserveBox');
   if(openBtn && box){
@@ -476,7 +569,7 @@
       box.scrollIntoView({behavior:'smooth',block:'center'});
     });
   }
-
+ 
   const reserveForm = document.getElementById('reserveForm');
   if(reserveForm){
     reserveForm.addEventListener('submit', async (e)=>{
@@ -513,7 +606,7 @@
       document.getElementById('reserveDone').style.display='block';
     });
   }
-
+ 
   const NOTIFY_ENDPOINT = 'https://formspree.io/f/xvznprnn';
   const notifyForm = document.getElementById('notifyForm');
   if (notifyForm) {
@@ -550,3 +643,4 @@
 </script>
 </body>
 </html>
+ 
